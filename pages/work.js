@@ -19,17 +19,6 @@ const Work = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="fashionStore"
-              title="Fashion Store"
-              thumbnail={thumbFashionStore}
-              link="https://github.com/git-anubhav/shop-app"
-            >
-              An online fashion store made with react-native. Available on iOS,
-              Android and Web.{' '}
-            </WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
               title="Java Chess"
               thumbnail={thumbChess}
               link="https://github.com/git-anubhav/chess-java"
@@ -51,6 +40,17 @@ const Work = () => {
                 debt-simplification algorithm.{' '}
               </Link>
               Written in typescript and react.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="fashionStore"
+              title="Fashion Store"
+              thumbnail={thumbFashionStore}
+              link="https://github.com/git-anubhav/shop-app"
+            >
+              An online fashion store made with react-native. Runs on iOS,
+              Android and Web.{' '}
             </WorkGridItem>
           </Section>
           <Section>
