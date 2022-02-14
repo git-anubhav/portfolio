@@ -9,7 +9,7 @@ import thumbSearce from '../public/images/works/searce.png'
 import thumbApigee from '../public/images/works/apigee.jpg'
 import Layout from '../components/layouts/article'
 
-const Works = () => {
+const Work = () => {
   return (
     <Layout>
       <Container>
@@ -57,7 +57,7 @@ const Works = () => {
             <WorkGridItem
               title="Personal Portfolio"
               thumbnail={thumbPortfolio}
-              link="https://github.com/git-anubhav/shop-app"
+              link="https://github.com/git-anubhav/portfolio"
             >
               Take a deeper look at the website you&apos;re on. Made with
               Next.js, Chakra UI, Framer Motion and Three.js.
@@ -87,4 +87,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default Work

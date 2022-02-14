@@ -12,7 +12,8 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Spacer
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -59,47 +60,55 @@ const Navbar = props => {
             <Logo />
           </Heading>
         </Flex>
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
+          width={{ base: 'none', md: 'auto' }}
+          align="right"
+          alignItems="end"
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/post" path={path}>
-            Posts
+          <LinkItem href="/work" path={path}>
+            Work
           </LinkItem>
         </Stack>
-        <Box flex={1} align="right">
-          <ThemeToggleButton />
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Source Code</MenuItem>
-                </NextLink>
-              </MenuList>
-            </Menu>
-          </Box>
+        <ThemeToggleButton />
+        <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              icon={<HamburgerIcon />}
+              variant="outline"
+              aria-label="Options"
+            />
+            <MenuList>
+              <NextLink href="/" passHref>
+                <MenuItem as={Link}>About</MenuItem>
+              </NextLink>
+              <NextLink href="/work" passHref>
+                <MenuItem as={Link}>Work</MenuItem>
+              </NextLink>
+              <NextLink
+                href="https://github.com/git-anubhav/portfolio"
+                passHref
+              >
+                <MenuItem as={Link}>Source Code</MenuItem>
+              </NextLink>
+            </MenuList>
+          </Menu>
         </Box>
       </Container>
     </Box>
