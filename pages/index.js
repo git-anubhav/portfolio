@@ -69,7 +69,7 @@ const Page = () => {
           <Paragraph>
             I&apos;m a Software Engineer based in New Delhi, India. I have a
             passion for building scalable and user-friendly web, mobile and
-            desktop applications. I have a proficiency in technologies like
+            desktop applications. I have proficiency in technologies like
             React.js, Angular.js, Node.js, React Native, Flutter, Electron.js
             and Apigee API Management. I have a major in Physics and a minor in
             Mathematics and Statistics, and am currently working as a full-time

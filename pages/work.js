@@ -69,7 +69,7 @@ const Work = () => {
               thumbnail={thumbSearce}
               link="https://www.searce.com/service-software"
             >
-              A deeper look at what me and my team does at Searce.
+              Find out what me and my team does at Searce.
             </WorkGridItem>
           </Section>
           <Section>
